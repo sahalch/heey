@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <h1 id="one">SelfStack</h1>
+    <button onclick="color()">submit</button>
+    <script>
+        let a= document.getElementById("one")
+        function color(){
+            if (a.style.color == "blue")
+            {
+           return a.style.color = "black";
+        }
+           else{
+
+            return a.style.color = "blue";
+           }
+        }
+    </script>
+</body>
+</html>
