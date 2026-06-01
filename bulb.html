@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<img id="bulb"
+src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXbvIQcdkPZa6QRpk-YO6ZVbsG8Vq-qvYWSg&s"
+width="150">
+
+<br><br>
+
+<button onclick="toggleBulb()" id="btn">OFF</button>
+
+<script>
+let isOn = true;
+
+function toggleBulb() {
+    let bulb = document.getElementById("bulb");
+    let btn = document.getElementById("btn");
+
+    if (isOn) {
+        bulb.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9Mv51hZ24AEcbTg4qg9ggusOx6yTM3_Nh0A&s";
+        btn.innerText = "ON";
+        isOn = false;
+    } else {
+        bulb.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXbvIQcdkPZa6QRpk-YO6ZVbsG8Vq-qvYWSg&s";
+        btn.innerText = "OFF";
+        isOn = true;
+    }
+}
+</script>
+
+</body>
+</html>
